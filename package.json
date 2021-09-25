@@ -1,0 +1,26 @@
+{
+  "name": "fdoc-be-2-yogesh312",
+  "version": "1.0.0",
+  "description": "assigment task 2 for backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exponentsoftware/fdoc-be-2-yogesh312.git"
+  },
+  "author": "yogesh kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exponentsoftware/fdoc-be-2-yogesh312/issues"
+  },
+  "homepage": "https://github.com/exponentsoftware/fdoc-be-2-yogesh312#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7",
+    "nodemon": "^2.0.13"
+  }
+}
