@@ -84,7 +84,13 @@ exports.getAllByFilter = async (req, res) => {
                 let lists = await List.find({}).sort({createdAt:1});
             res.json(lists);
             }
-        } else{
+        } else if (cat){
+            let listByCat= await List.find({"category": cat}).sort({createdAt:1})
+            res.json({message:`list by ${cat}`,listByCat});
+        } else if(title){
+            let listByTitle= await List.find({"title": title}).sort({createdAt:1})
+            res.json({message:`list by ${cat}`,listByTitle});
+        }else{
             let lists = await List.find({});
         res.json(lists);
         }
